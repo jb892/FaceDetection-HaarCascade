@@ -27,7 +27,7 @@ python Haar-cascade-test-v1.py
 You can add your own images into the folder and alter the filename in Haar-cascade-test-v1.py.
 
 ## Result
-[]()
+![](https://github.com/jb892/FaceDetection-HaarCascade/blob/master/test-result.jpg)
 
 ## Authors
 Bo Ju (Jack)
