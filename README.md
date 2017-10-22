@@ -5,10 +5,10 @@ To use HaarCascade xml file to do facial and eye detection
 
 ### Prerequisites
 
-What things you need to install:
+Dependencies you need to install:
 
-* Python 2.7
-* OpenCV 2.*
+* Python 3.6
+* OpenCV 3.3.0
 
 ## Running the tests
 
