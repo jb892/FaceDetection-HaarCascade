@@ -12,13 +12,13 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 faces = face_cascade.detectMultiScale(gray, 1.3, 5)
 
-print len(faces)
+print(len(faces))
 
 i = 0
 for (x,y,w,h) in faces:
 	cv2.rectangle(img, (x, y), (x+w, y+h), (255,0,0), 2)
 	i = i + 1
-	cv2.putText(img, ('Face_%03d' % i), (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,0,255), 1, cv2.CV_AA)
+	cv2.putText(img, ('Face_%03d' % i), (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,0,255), 1, cv2.LINE_AA)
 	roi_gray = gray[y:y+h, x:x+w]
 	roi_color = img[y:y+h, x:x+w]
 	eyes = eye_cascade.detectMultiScale(roi_gray)
